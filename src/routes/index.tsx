@@ -53,13 +53,35 @@ function Index() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
-    setSubmitted({
+    const pkgId = String(fd.get("package") || "");
+    const pkgObj = PACKAGES.find((p) => p.id === pkgId);
+    const payload = {
+      timestamp: new Date().toISOString(),
       name: String(fd.get("name") || ""),
       phone: String(fd.get("phone") || ""),
-      pkg: PACKAGES.find((p) => p.id === String(fd.get("package")))?.name || "",
-    });
+      address: String(fd.get("address") || ""),
+      state: String(fd.get("state") || ""),
+      payment: String(fd.get("payment") || ""),
+      package: pkgObj?.name || pkgId,
+      price: pkgObj?.price || "",
+      page: typeof window !== "undefined" ? window.location.href : "",
+    };
+
+    // Google Apps Script Web App URL — paste your deployed /exec URL below
+    const WEBHOOK_URL = "https://script.google.com/macros/s/PASTE_YOUR_DEPLOYMENT_ID/exec";
+    if (WEBHOOK_URL && !WEBHOOK_URL.includes("PASTE_YOUR_DEPLOYMENT_ID")) {
+      fetch(WEBHOOK_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      }).catch(() => {});
+    }
+
+    setSubmitted({ name: payload.name, phone: payload.phone, pkg: payload.package });
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
+
 
   return (
     <div className="min-h-screen bg-[#f7faf7] text-slate-900">
