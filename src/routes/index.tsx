@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import visdabilLogo from "@/assets/visdabil-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -70,7 +71,7 @@ function Index() {
       {/* Header */}
       <header className="bg-white border-b sticky top-0 z-30">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-          <div className="text-2xl font-extrabold text-orange-600 tracking-tight">VD STORES</div>
+          <img src={visdabilLogo.url} alt="Visdabil" className="h-12 w-auto object-contain" />
           <button
             onClick={scrollToOrder}
             className="bg-red-600 hover:bg-red-700 text-white font-bold uppercase text-sm px-4 sm:px-5 py-2.5 rounded-md shadow"
