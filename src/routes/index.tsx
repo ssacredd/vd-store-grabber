@@ -415,16 +415,25 @@ function Index() {
                 </select>
               </Field>
 
-              <Field label="Preferred Payment Method *">
-                <select name="payment" required className="w-full border rounded-md px-3 py-3 bg-white">
-                  <option value="cod">💵 Cash on Delivery</option>
-                  <option value="transfer">🏦 Transfer on Delivery</option>
-                </select>
-              </Field>
+              <div>
+                <label className="block text-xs font-bold text-slate-700 uppercase mb-1">
+                  Preferred Payment Method <span className="text-red-500">*</span>
+                </label>
+                <div className="grid grid-cols-2 gap-3 mt-1">
+                  <label className="flex items-center justify-between bg-white border border-gray-300 rounded-lg px-4 py-3 text-xs font-bold cursor-pointer hover:border-green-600 transition">
+                    <span>💵 Cash on Delivery</span>
+                    <input type="radio" name="payment" value="Cash on Delivery" defaultChecked className="accent-green-600" />
+                  </label>
+                  <label className="flex items-center justify-between bg-white border border-gray-300 rounded-lg px-4 py-3 text-xs font-bold cursor-pointer hover:border-green-600 transition">
+                    <span>🏦 Transfer on Delivery</span>
+                    <input type="radio" name="payment" value="Transfer on Delivery" className="accent-green-600" />
+                  </label>
+                </div>
+              </div>
 
               <button
                 type="submit"
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-extrabold uppercase py-4 rounded-md text-lg shadow-lg"
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-black uppercase py-4 rounded-xl text-lg shadow-lg tracking-wide"
               >
                 👉 Submit Your Order Now
               </button>
@@ -433,8 +442,17 @@ function Index() {
         </div>
       </section>
 
-      <footer className="bg-slate-900 text-slate-300 text-center py-6 text-sm">
-        © {new Date().getFullYear()} VD Stores. All rights reserved.
+      <footer className="p-6 md:p-8 bg-gray-100 border-t border-gray-200 text-center text-xs text-slate-500 space-y-4">
+        <p className="font-bold text-slate-700">VD Stores • Help Hotline: 09031591670</p>
+        <p className="leading-relaxed">
+          <strong>Disclaimer:</strong> This product is not intended to diagnose, treat, cure, or prevent any disease. The information provided on this site is for informational purposes only and is not intended as a substitute for advice from your physician or other health care professional. Always consult with a healthcare professional before starting any new routine.
+        </p>
+        <p className="leading-relaxed">
+          Testimonials, case studies, and examples found on this page are results that have been forwarded to us by users of Vision Enhance Roller, and may not reflect the typical purchaser's experience.
+        </p>
+        <p className="leading-relaxed border-t border-gray-300 pt-4 text-[10px] text-slate-400">
+          This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+        </p>
       </footer>
     </div>
   );
