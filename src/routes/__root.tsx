@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "VD Stores — Vision Enhance Roller | Clear, Soothed Eyes Naturally" },
+      { name: "description", content: "Vision Enhance Roller — soothe dry, strained eyes naturally. 35% OFF today + Free Delivery + Pay on Delivery nationwide in Nigeria." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "VD Stores — Vision Enhance Roller | Clear, Soothed Eyes Naturally" },
+      { property: "og:description", content: "Vision Enhance Roller — soothe dry, strained eyes naturally. 35% OFF today + Free Delivery + Pay on Delivery nationwide in Nigeria." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "VD Stores — Vision Enhance Roller | Clear, Soothed Eyes Naturally" },
+      { name: "twitter:description", content: "Vision Enhance Roller — soothe dry, strained eyes naturally. 35% OFF today + Free Delivery + Pay on Delivery nationwide in Nigeria." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1b58aa1a-d46b-4cc2-9e71-45f00fc8dd4e/id-preview-04fba02a--51fb7c77-89e8-4cb1-82cf-5e1b24610441.lovable.app-1783731060279.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1b58aa1a-d46b-4cc2-9e71-45f00fc8dd4e/id-preview-04fba02a--51fb7c77-89e8-4cb1-82cf-5e1b24610441.lovable.app-1783731060279.png" },
     ],
     links: [
       {

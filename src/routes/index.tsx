@@ -11,11 +11,11 @@ export const Route = createFileRoute("/")({
         content:
           "Vision Enhance Roller — soothe dry, strained eyes naturally. 35% OFF today + Free Delivery + Pay on Delivery nationwide in Nigeria.",
       },
-      { property: "og:title", content: "VD Stores — Vision Enhance Roller" },
+      { property: "og:title", content: "VD Stores — Vision Enhance Roller | Clear, Soothed Eyes Naturally" },
       {
         property: "og:description",
         content:
-          "Clear, soothed eyes without strain or expensive surgeries. Pay on delivery across Nigeria.",
+          "Vision Enhance Roller — soothe dry, strained eyes naturally. 35% OFF today + Free Delivery + Pay on Delivery nationwide in Nigeria.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
