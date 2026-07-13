@@ -282,7 +282,7 @@ function Index() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mt-10 text-center text-sm">
-          {["🚚 Fast Delivery","🔒 Safe Ordering","💰 Pay On Delivery","📞 Full Support","↩️ 30-Day Guarantee"].map((t) => (
+          {["🚚 Fast Delivery","🔒 Safe Ordering","💰 Pay On Delivery","📞 Full Support","🎁 Free Delivery"].map((t) => (
             <div key={t} className="bg-white border rounded-lg py-3 font-semibold text-slate-700">{t}</div>
           ))}
         </div>
@@ -342,23 +342,13 @@ function Index() {
         </div>
       </section>
 
-      {/* Guarantee */}
-      <section className="max-w-4xl mx-auto px-4 pb-12">
-        <div className="bg-white border-2 border-green-300 rounded-2xl p-8 text-center">
-          <div className="text-5xl">🛡️</div>
-          <h3 className="text-2xl font-extrabold mt-2">30-DAY SATISFACTION GUARANTEE</h3>
-          <p className="text-slate-600 mt-3">
-            Try it completely risk-free. If you're not satisfied with the soothing experience within 30 days, contact our dedicated support team via phone call or WhatsApp, and we'll assist you according to our simple return policy guidelines.
-          </p>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="max-w-3xl mx-auto px-4 pb-12">
         <h2 className="text-3xl font-extrabold text-center">FREQUENTLY ASKED QUESTIONS</h2>
         <div className="mt-6 space-y-3">
           {[
-            { q: "How long does delivery take?", a: "Delivery takes 1-2 business days within Lagos and main urban cities, and 3-5 days for other regional locations." },
+            { q: "How long does delivery take?", a: "Delivery takes under 24 - 48 hours within Lagos and main urban cities, and 3-5 days for other regional locations. Delivery is free nationwide." },
             { q: "Do I pay before delivery?", a: "No upfront financial commitment is required! We offer 100% Cash or Bank Transfer Payment on Delivery nationwide." },
             { q: "How do I use the Vision Enhance Roller?", a: "Simply roll the cool steel ball gently around the outer bones of your eye contours (orbital area) 2-3 times daily. Avoid rolling it directly inside your eye." },
             { q: "Is it safe for someone using glasses or eye drops?", a: "Yes, it is 100% natural and applied externally, making it completely safe. If you have had recent eye surgery, consult your doctor first." },
