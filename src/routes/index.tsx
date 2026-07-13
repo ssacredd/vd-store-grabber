@@ -385,7 +385,7 @@ function Index() {
               <div className="text-5xl">🎉</div>
               <h3 className="text-2xl font-extrabold mt-2">Order Received Successfully!</h3>
               <p className="text-slate-600 mt-3">
-                Thank you for your order! We are preparing your package. One of our support representatives will call or message you on WhatsApp shortly to confirm details.
+                Thank you for your order! We are preparing your package. One of our support representatives will call or message you on WhatsApp at <strong>+234 904 552 7261</strong> shortly to confirm details.
               </p>
               <div className="mt-6 text-left bg-white border rounded-lg p-4 space-y-1">
                 <p>📍 <strong>Name:</strong> {submitted.name}</p>
