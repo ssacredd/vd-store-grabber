@@ -68,7 +68,7 @@ function Index() {
     };
 
     // Google Apps Script Web App URL — paste your deployed /exec URL below
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxR1Cr-jueQ45H3hH71V829PaqhKaWDbeI5X8OtoGLtWDICNwJlvyF4iKq8m77v8j8/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxEE6w8y7WQ4Lum1W7Z_pIIsmOXksQ_LhlJmVJAE3RD1n5uv6PAwkcDjF7U_JjHwTs/exec";
     if (WEBHOOK_URL) {
       fetch(WEBHOOK_URL, {
         method: "POST",
